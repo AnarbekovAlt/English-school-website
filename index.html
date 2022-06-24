@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Онлайн кассы</title>
+  </head>
+  <body>
+    <!-- Hero -->
+    <header class="header">
+      <div class="container">
+        <div class="row align-items-center justify-content-between header__top">
+          <div class="col-sm-6">
+            <p class="header-logo">
+              <img
+                class="logo"
+                src="img/logo.png"
+                alt="Центр Электронных Услуг"
+                title="Центр Электронных Услуг"
+              />
+            </p>
+          </div>
+          <div class="col-sm-6 col-12">
+            <div class="header-phones">
+              <a href="tel: 4532345" class="header-phones__number">453-43-25</a>
+              <a href="tel: +79991234567" class="header-phones__number">+7 (999) 123-45-67</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-7">
+            <div class="header-text">
+              <h1 class="header-title">
+                Подключим онлайн-кассу <br />
+                за 3 часа от 6000 рублей
+              </h1>
+              <p class="header__description">
+                Выезжать никуда не нужно, счёт выставим по ИНН, в подарок даём ЭЦП
+              </p>
+              <div class="row header__triggers">
+                <div class="col-lg-4">
+                  <span class="header__trigger">Знаем как поключить всё по Ф3-54, чтобы не было штрафов</span>
+                </div>
+                <div class="col-lg-4">
+                  <span class="header__trigger">Подключим для ООО, АО и ИП на любой системе налогообложения</span>
+                </div>
+                <div class="col-lg-4">
+                  <span class="header__trigger">Подходит для любых торговых точек и интернет-магазинов</span>
+                </div>
+              </div>
+
+              <button data-toggle="modal" data-target="#modal" data-title="Заказать кассу в&nbsp;1&nbsp;клик" class="button button_light">Заказать кассу в 1 клик</button>
+            </div>
+          </div>
+          <div class="col-lg-5">
+            <img src="./img/header-img.png" alt="Онлайн-касса" class="header-img">
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Products -->
+    <section class="section products">
+      <div class="container">
+        <h2 class="section-title section__title">
+          Подключаем только те кассы, <br>
+          которые подходят по Ф3-54
+        </h2>
+          <div class="row">
+            <div class="col-lg-4 col-md-6 col-12 mx-auto">
+              <div class="product-card product__card">
+                <h3 class="product-card__title">Эвотор 5</h3>
+                <img src="./img/products/1.jpeg" alt="Эвотор 5" class="product-card__image">
+                <div class="product-card__text">Онлайн-касса для курьерской доставки, торговли на выезде, в небольших магазинах и на рынках. </div>
+                <strong class="product-card__price">17 900 руб.</strong>
+                 <button data-toggle="modal" data-target="#modal" data-title="Заказать кассу Эвотор 5" class="button button_dark  product-card__button">Заказать в 1 клик</button>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12 mx-auto">
+              <div class="product-card product__card">
+                <h3 class="product-card__title">АТОЛ СТБ 5</h3>
+                <img src="./img/products/2.jpeg" alt="АТОЛ СТБ 5" class="product-card__image">
+                <div class="product-card__text">Идеально подойдет для небольших торговых точек, кафе и организаций, оказывающих услуги.</div>
+                <strong class="product-card__price">17 200 руб.</strong>
+                 <button data-toggle="modal" data-target="#modal" data-title="Заказать кассу АТОЛ СТБ 5" class="button button_dark  product-card__button">Заказать в 1 клик</button>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12  mx-auto">
+              <div class="product-card product__card">
+                <h3 class="product-card__title">АТОЛ 91Ф</h3>
+                <img src="./img/products/3.jpeg" alt="АТОЛ 91Ф" class="product-card__image">
+                <div class="product-card__text">Подходит для небольших магазинов, благодаря небольшим затратам на обслуживание аппарата.</div>
+                <strong class="product-card__price">8 240 руб.</strong>
+                 <button data-toggle="modal" data-target="#modal" data-title="Заказать кассу АТОЛ 91Ф" class="button button_dark  product-card__button">Заказать в 1 клик</button>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12  mx-auto">
+              <div class="product-card product__card">
+                <h3 class="product-card__title">Эвотор Power 1Ф</h3>
+                <img src="./img/products/4.jpeg" alt="Эвотор Power 1Ф" class="product-card__image">
+                <div class="product-card__text">Power — первое на кассовом рынке устройство, которое соединило в себе фискальный регистратор с экраном </div>
+                <strong class="product-card__price">37 400 руб.</strong>
+                 <button data-toggle="modal" data-target="#modal" data-title="Заказать кассу Power 1Ф" class="button button_dark  product-card__button">Заказать в 1 клик</button>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12  mx-auto">
+              <div class="product-card product__card">
+                <h3 class="product-card__title">АТОЛ Sigma 7</h3>
+                <img src="./img/products/5.jpeg" alt="АТОЛ Sigma 7" class="product-card__image">
+                <div class="product-card__text">Преимущества:Все необходимые интерфейсы для связи и периферии
+                  Автономная работа до 5 часов
+                  </div>
+                <strong class="product-card__price">20 480 руб.</strong>
+                 <button data-toggle="modal" data-target="#modal" data-title="Заказать кассу АТОЛ Sigma 7" class="button button_dark  product-card__button">Заказать в 1 клик</button>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12  mx-auto">
+              <div class="product-card product__card">
+                <h3 class="product-card__title">Эвотор 7.2</h3>
+                <img src="./img/products/6.jpeg" alt="Эвотор 7.2" class="product-card__image">
+                <div class="product-card__text">«Эвотор» — это отличный вариант контрольно-кассового оборудования, идеально подойдет </div>
+                <strong class="product-card__price">21 700 руб.</strong>
+                 <button data-toggle="modal" data-target="#modal" data-title="Заказать кассу Эвотор 7.2" class="button button_dark  product-card__button">Заказать в 1 клик</button>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12  mx-auto">
+              <div class="product-card product__card">
+                <h3 class="product-card__title">Эвотор 5i</h3>
+                <img src="./img/products/7.jpeg" alt="Эвотор 5i" class="product-card__image">
+                <div class="product-card__text">Отличное решение для пассажирских перевозок без валидаторов, курьерской доставки, выездной торговли. Подойдет микробизнесам — кофе с собой, сувенирным точкам, цветочным магазинам.</div>
+                <strong class="product-card__price">24 900 руб.</strong>
+                 <button data-toggle="modal" data-target="#modal" data-title="Заказать кассу Эвотор 5i" class="button button_dark  product-card__button">Заказать в 1 клик</button>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12  mx-auto">
+              <div class="product-card product__card">
+                <h3 class="product-card__title">Эвотор 7.3</h3>
+                <img src="./img/products/8.jpeg" alt="Эвотор 7.3" class="product-card__image">
+                <div class="product-card__text">Эвотор 7.3 — это полный набор инструментов для предпринимателя: кассовый терминал для торговли, личный кабинет для контроля продаж и сотрудников, магазин приложений для расширения функционала.</div>
+                <strong class="product-card__price">24 700 руб.</strong>
+                 <button data-toggle="modal" data-target="#modal" data-title="Заказать кассу Эвотор 7.3" class="button button_dark  product-card__button">Заказать в 1 клик</button>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12  mx-auto">
+              <div class="product-card product__card">
+                <h3 class="product-card__title">Кассатка 7</h3>
+                <img src="./img/products/9.jpeg" alt="Кассатка 7" class="product-card__image">
+                <div class="product-card__text">Онлайн-касса нового поколения, в которой содержится кассовый терминал, фискальный накопитель, а также разъемы для подключения принтера чеков, сканера и считывателя банковских карт.</div>
+                <strong class="product-card__price">13 900 руб.</strong>
+                 <button data-toggle="modal" data-target="#modal" data-title="Заказать кассу Кассатка 7" class="button button_dark  product-card__button">Заказать в 1 клик</button>
+              </div>
+            </div>
+          </div>
+      </div>
+    </section>
+    <!-- Help -->
+    <section class="section section_dark help">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-10 col-sm-8">
+            <h2 class="section-title_dark">Оставьте номер телефона, мы подскажем, какую кассу вам можно установить и ответим на ваши вопросы. Это бесплатно</h2>
+            <form action="mail.php" method="POST" class="form section__form form_horizontal">
+              <p class="section__description">Обычно перезваниваем за 10 минут, если нужно быстрее - нажмите сюда</p>
+              <input type="text" class="input form__input _req" placeholder="Ваше имя" name="user-name">
+              <input type="tel" class="input form__input _req" placeholder="Номер телефона" name="user-phone">
+              <button type="submit" class="button button_dark form__button">Бесплатная консультация</button>
+            </form>
+            <p class="section__description">Нажимая на кнопку, вы даете согласие на обработку персональных данных, подробнее в <a class="policy-link" href="#policy">политике конфиденциальности</a></p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Extra -->
+    <section class="section extra">
+      <div class="container">
+        <h2 class="section-title section__title">
+          Для онлайн кассы <br>
+          дополнительно потребуется
+        </h2>
+        <div class="extra-cards">
+            <div class="extra-card extra__card">
+              <h3 class="extra-card__title">ФН</h3>
+              <p class="extra-card__text">Фискальный накопитель на 13, 15 или 36 месяцев для шифрования и защиты фискальных данных</p>
+              <strong class="extra-card__price">от 7000 руб.</strong>
+              <button class="button button_black">Консультация</button></div>
+            <div class="extra-card extra__card">
+              <h3 class="extra-card__title">ОФД</h3>
+              <p class="extra-card__text">Договор с оператором фискальных данных</p>
+              <strong class="extra-card__price">от 2000 руб.</strong>
+              <button class="button button_black">Консультация</button></div>
+            <div class="extra-card extra__card">
+              <h3 class="extra-card__title">ЭЦП</h3>
+              <p class="extra-card__text">Электронная подпись для передачи данных в налоговую службу</p>
+              <strong class="extra-card__price">1500 руб.</strong><button class="button button_black">Консультация</button></div>
+            <div class="extra-card extra__card">
+              <h3 class="extra-card__title">Обучение</h3>
+              <p class="extra-card__text">Обучим вас работе с кассой, чтобы вы не допустили ошибок при работе с ней</p>
+              <strong class="extra-card__price">от 1500 руб.</strong><button class="button button_black">Консультация</button></div>
+          </div>
+        </div>
+    </section>
+    <!-- Reasons -->
+    <section class="section reasons">
+      <div class="container">
+        <h2 class="section-title section__title">
+          Подключите онлайн-кассу у нас
+        </h2>
+        <div class="row">
+          <div class="col-lg-4 col-sm-6">
+            <div class="reason">
+              <h3 class="reason__title">Гарантия на 1 год</h3>
+              <p class="reason__text">На все оборудование распространяется полная гарантия работоспосбности на 12 месяцев</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <div class="reason">
+              <h3 class="reason__title">Работа по Ф3-54</h3>
+              <p class="reason__text">Абсолютно все устройства готовы для работы в рамках закона 54-Ф3. Вам не о чем беспокоиться</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <div class="reason">
+              <h3 class="reason__title">Не бросим после подключения</h3>
+              <p class="reason__text">Консультируем и поддерживаем вас по телефону после подключения онлайн-кассы. Если будут сложности - звоните</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <div class="reason">
+              <h3 class="reason__title">Готовые решения</h3>
+              <p class="reason__text">У нас уже есть готовые решения по онлайн-кассам для общепита, услуг, розничных и интернет магазинов</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <div class="reason">
+              <h3 class="reason__title">Есть рассрочка</h3>
+              <p class="reason__text">Оформим рассрочку от 3 до 12 месяцев через Тинькофф. Заявку рассмотрят через 15 минут</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Bank -->
+    <section class="section section_dark tinkoff">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-8 col-md-10">
+            <h2 class="section-title_dark">Кассу можно оформить в рассрочку <br> до 12 месяцев через Тинькофф Банк</h2>
+            <form action="#" method="POST" class="form section__form form_horizontal">
+              <p class="section__description">Одобрение по заявке придёт уже через 15 минут</p>
+              <input type="text" class="input form__input _req" placeholder="Ваше имя" name="user-name">
+              <input type="tel" class="input form__input _req" placeholder="Номер телефона" name="user-phone">
+              <button type="submit" class="button button_dark form__button">Бесплатная консультация</button>
+            </form>
+            <p class="section__description">Нажимая на кнопку, вы даете согласие на обработку персональных данных, подробнее в <a class="policy-link" href="#policy">политике конфиденциальности</a></p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Contacts -->
+    <section class="contacts">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3">
+            <h2 class="section-title section__title">
+              Наши контакты
+            </h2>
+            <h3 class="contacts__title">Адрес</h3>
+            <address class="contacts__address contacts__text">улица Альпинистов 85, Мегалэнд - 2й этаж</address>
+            <h3 class="contacts__title">Режим работы</h3>
+            <p class="contacts__work contacts__text">С понедельника по пятницу с 8 до 18:00 часов В субботу с 9 до 16 часов</p>
+            <h3 class="contacts__title">Телефоны</h3>
+            <p class="contacts__text">
+              <a href="tel:8 (999) 123-45-67" class="contacts__phone">8 (999) 123-45-67</a>
+              <a href="tel:8 (999) 123-45-67" class="contacts__phone">8 (999) 123-45-68</a>
+            </p>
+            </div>
+        </div><iframe class="map"
+        src="https://yandex.ru/map-widget/v1/?um=constructor%3A2a6173476c0736bd2f9bfee59b047723d6079d120ba3144be3488d6f31db2978&amp;source=constructor" width="100%" height="400" frameborder="0"></iframe>
+      </div>
+      </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-4">
+            <img class="logo footer__logo" src="./img/logo.png" alt="Центр электронных услуг">
+          </div>
+          <div class="col-lg-4">
+            <div class="social-links">
+            <a href="#" class="social-links__item"><img  src="./img/instagram.svg" alt=""></a>
+            <a href="#" class="social-links__item"><img src="./img/vk.png" alt=""></a>
+            <a href="#" class="social-links__item"><img src="./img/telegram.png" alt=""></a>
+          </div>
+          </div>
+          <div class="col-lg-4">
+            <a href="#policy" class="footer__policy-link">Политика конфиденциальности</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Modals -->
+    <div class="modal" id="modal">
+      <div class="modal-dialog">
+        <div class="modal-header">
+          <div class="modal-header__title">
+            Оставьте заявку
+          </div>
+          <button class="modal-close">
+            &times;
+          </button>
+        </div>
+        <div class="modal-body">
+          <form action="mail.php" method="POST" class="form modal-form modal__form form_vertical">
+            <p class="modal-form__description">Свяжемся с вами через&nbsp;15&nbsp;минут</p>
+            <input type="text" name="user-name" class="input modal-form__input _req" placeholder="Ваше имя">
+            <input type="tel" name="user-phone" class="input modal-form__input _req" placeholder="Номер телефона">
+            <button type="submit" class="button button_dark modal-form__button">Бесплатная консультация</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
+
